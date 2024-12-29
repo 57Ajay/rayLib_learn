@@ -7,6 +7,7 @@ A modern C project created with project-generator.
 - CMake 3.20 or higher
 - C compiler with C23 support
 - MinGW-w64 (for Windows)
+- raylib
 
 ## Building
 
