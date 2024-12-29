@@ -1,0 +1,3 @@
+C:/projects/cProjects/raylibLearn/build/CMakeFiles/raylibLearn.dir
+C:/projects/cProjects/raylibLearn/build/CMakeFiles/edit_cache.dir
+C:/projects/cProjects/raylibLearn/build/CMakeFiles/rebuild_cache.dir
