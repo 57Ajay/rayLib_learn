@@ -16,6 +16,7 @@ else()
     add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+
 # Add the executable
 add_executable(${PROJECT_NAME} src/main.c)
 
@@ -28,3 +29,10 @@ set_target_properties(${PROJECT_NAME}
 # Adding dependency: raylib
 find_package(raylib CONFIG REQUIRED)
 target_link_libraries(${PROJECT_NAME} ${raylib_LIBRARIES})
+
+# --- Handle Resource Files ---
+# Create the output directory for resources if it doesn't exist
+file(MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/bin/resources")
+
+# Copy the entire resources directory to the output directory
+file(COPY "${CMAKE_SOURCE_DIR}/resources" DESTINATION "${CMAKE_BINARY_DIR}/bin")
